@@ -1,0 +1,22 @@
+<header class="header">
+    <div class="header-menu">
+        <div class="header-logo">
+            <img src="logo.png" alt="" />
+        </div>
+        <div class="header-title">
+            <h2>Currency Exchange</h2>
+        </div>
+
+        <div class="currency-container">
+            <div class="currency">
+                <img src="euro.png" alt="">
+                <p>EUR = UAH: {{ exchangeRates?.EUR | number : "1.2-2" }}</p>
+            </div>
+            <div class="currency">
+                <img src="usa.webp" alt="">
+                <p>USD = UAH: {{ exchangeRates?.USD | number : "1.2-2" }}</p>
+            </div>
+
+        </div>
+    </div>
+</header>

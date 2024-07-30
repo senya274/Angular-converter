@@ -1,0 +1,98 @@
+.converter-section {
+  margin-top: 50px;
+}
+.converter-container {
+  margin: 25px;
+}
+.converter-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.converter-item {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.converter-input {
+  display: flex;
+}
+
+.converter-item label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #6d7a88;
+}
+
+.converter-item input,
+.converter-item select {
+  background: #efefef;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.converter-item input:focus,
+.converter-item select:focus {
+  border-color: #26278d;
+  outline: none;
+}
+
+.converter-item select {
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  width: max-content;
+}
+
+.converter-item input[type="number"]::-webkit-inner-spin-button,
+.converter-item input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.separator {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #26278d;
+}
+.exchange {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #26278d;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+.exchange img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .converter-items {
+    flex-direction: column;
+  }
+
+  .converter-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+<section class="converter-section">
+  <div class="converter-container">
+    <div class="converter-items">
+      <div class="converter-title">
+        <h2>Currency Converter</h2>
+      </div>
+      <div class="converter-item">
+        <label for="amount1">Amount:</label>
+        <div class="converter-input">
+          <input
+            id="amount1"
+            type="number"
+            [(ngModel)]="amount1"
+            (ngModelChange)="onAmountChange('amount1')"
+          />
+          <select
+            id="currency1"
+            [(ngModel)]="currency1"
+            (ngModelChange)="onCurrencyChange()"
+          >
+            <option *ngFor="let currency of currencies" [value]="currency">
+              {{ currency }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="separator">
+        <div class="border"></div>
+        <div class="exchange">
+          <img src="exchange.png" alt="" />
+        </div>
+      </div>
+      <div class="converter-item">
+        <label for="amount2">Converted Amount:</label>
+        <div class="converter-input">
+          <input
+            id="amount2"
+            type="number"
+            [(ngModel)]="amount2"
+            (ngModelChange)="onAmountChange('amount2')"
+          />
+          <select
+            id="currency2"
+            [(ngModel)]="currency2"
+            (ngModelChange)="onCurrencyChange()"
+          >
+            <option *ngFor="let currency of currencies" [value]="currency">
+              {{ currency }}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
